@@ -129,8 +129,23 @@ body {
 .chevron {
     width: 22px;
     height: 22px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     opacity: 0.8;
+}
+
+/* Animation de la flèche au survol */
+.section-button:hover .chevron {
+    transform: translateX(5px) rotate(90deg);
+    opacity: 1;
+}
+
+/* Animation quand la section est expanded */
+.section-button.expanded .chevron {
+    transform: rotate(180deg);
+}
+
+.section-button.expanded:hover .chevron {
+    transform: translateX(5px) rotate(180deg);
 }
 
 .section-content {
@@ -143,10 +158,6 @@ body {
 
 .section-content-inner {
     padding-bottom: 35px;
-}
-
-.section-button.expanded .chevron {
-    transform: rotate(180deg);
 }
 
 .section-button.expanded .section-content {
