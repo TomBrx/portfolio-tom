@@ -331,3 +331,22 @@ footer {
         font-size: 1rem;
     }
 }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2c4a66 0%, #4a6b82 25%, #7094ae 50%, #c4dae5 100%);
+    min-height: 100vh;
+    color: #2c4a66;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
