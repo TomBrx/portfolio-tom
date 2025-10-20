@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cres'Pain</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="frontend/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.html" class="logo">
+                <img src="frontend/images/logo-noir.png" alt="Cres'Pain Logo" style="height:80px;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Nos Produits</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+            </ul>
+            <div class="contact-info">
+                <i class="fas fa-phone"></i>
+                <a href="tel:0759547639" class="phone-number">07 59 54 76 39</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <img src="frontend/images/logo-blanc.png" alt="Cres'Pain Logo" class="hero-logo">
+            <p>Découvrez nos pains, viennoiseries, pâtisseries et snacking préparés avec passion.</p>
+            <a href="#produits" class="cta-button">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section" id="produits">
+        <br><br>
+        <h2 class="section-title">Nos Produits</h2>
+        <div class="product-filters" style="text-align:center; margin-bottom:2rem;">
+            <button class="filter-btn active" data-filter="pain">Pains</button>
+            <button class="filter-btn" data-filter="viennoiseries">Viennoiseries & Pâtisseries</button>
+            <button class="filter-btn" data-filter="donuts">Donuts & Gourmandises</button>
+            <button class="filter-btn" data-filter="sandwichs">Sandwichs & Paninis</button>
+            <button class="filter-btn" data-filter="hamburgers">Hamburger & Frites</button>
+        </div>
+        <div class="products-grid">
+            <!-- Pains (toujours en haut) -->
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/baguette.png" alt="Baguette" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Baguette</h3>
+                    <p class="product-description">Baguette traditionnelle croustillante.</p>
+                    <div class="product-price">1€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/tradition.jpg" alt="Tradition" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Tradition</h3>
+                    <p class="product-description">Pain tradition à la mie alvéolée et croûte dorée.</p>
+                    <div class="product-price">1.30€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/cereale.png" alt="Pain aux céréales" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain aux céréales</h3>
+                    <p class="product-description">Pain aux graines et céréales variées.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/campagne.png" alt="Pain de campagne" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain de campagne</h3>
+                    <p class="product-description">Pain rustique à la mie généreuse.</p>
+                    <div class="product-price">2€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/complet.png" alt="Pain complet" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain complet</h3>
+                    <p class="product-description">Pain complet riche en fibres.</p>
+                    <div class="product-price">2€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/platine.png" alt="Pain platine" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain platine</h3>
+                    <p class="product-description">Pain moelleux au goût subtil.</p>
+                    <div class="product-price">1.70€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/boulot.png" alt="Pain boulot" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain boulot</h3>
+                    <p class="product-description">Pain rond idéal pour les repas en famille.</p>
+                    <div class="product-price">1.70€</div>
+                </div>
+            </div>
+            <div class="product-card pain">
+                <div class="product-image">
+                    <img src="frontend/images/pains/froment.png" alt="Pain froment" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain froment</h3>
+                    <p class="product-description">Pain à la farine de froment, léger et savoureux.</p>
+                    <div class="product-price">2€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/pain-chocolat.png" alt="Pain chocolat" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pain chocolat</h3>
+                    <p class="product-description">Viennoiserie moelleuse au chocolat.</p>
+                    <div class="product-price">0.90€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/croissant.png" alt="Croissant" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Croissant</h3>
+                    <p class="product-description">Croissant pur beurre croustillant.</p>
+                    <div class="product-price">0.80€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/chausson-pomme.png" alt="Chausson aux pommes" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Chausson aux pommes</h3>
+                    <p class="product-description">Feuilleté garni de compote de pommes.</p>
+                    <div class="product-price">1.30€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/torsade-chocolat.png" alt="Torsade chocolat" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Torsade chocolat</h3>
+                    <p class="product-description">Pâte feuilletée torsadée au chocolat.</p>
+                    <div class="product-price">1.50€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/suisse.png" alt="Suisse pépite" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Suisse pépite</h3>
+                    <p class="product-description">Brioche aux pépites de chocolat.</p>
+                    <div class="product-price">1.50€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/mascotte.png" alt="Mascotte nature" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Mascotte nature</h3>
+                    <p class="product-description">Brioche nature légère et gourmande.</p>
+                    <div class="product-price">1.50€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/viennoiseries/mini-beignets-nature.png" alt="Mini beignet nature" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Mini beignet nature</h3>
+                    <p class="product-description">Petit beignet moelleux nature.</p>
+                    <div class="product-price">0.50€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/religieuse-chocolat.png" alt="Religieuse chocolat" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Religieuse chocolat</h3>
+                    <p class="product-description">Pâtisserie à la crème chocolat.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/religieuse-cafe.png" alt="Religieuse café" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Religieuse café</h3>
+                    <p class="product-description">Pâtisserie à la crème café.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/flan-grand-mere.png" alt="Flan grand-mère" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Flan grand-mère</h3>
+                    <p class="product-description">Flan traditionnel onctueux.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/eclair-caramel.png" alt="Éclair caramel" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Éclair caramel</h3>
+                    <p class="product-description">Éclair garni de crème caramel.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/eclair-chocolat.png" alt="Éclair chocolat" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Éclair chocolat</h3>
+                    <p class="product-description">Éclair garni de crème chocolat.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/eclair-speculos.png" alt="Éclair speculoos" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Éclair speculoos</h3>
+                    <p class="product-description">Éclair garni de crème speculoos.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/eclair-pistache.png" alt="Éclair pistache" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Éclair pistache</h3>
+                    <p class="product-description">Éclair garni de crème pistache.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card viennoiseries">
+                <div class="product-image">
+                    <img src="frontend/images/patisseries/eclair-cafe.png" alt="Éclair café" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Éclair café</h3>
+                    <p class="product-description">Éclair garni de crème café.</p>
+                    <div class="product-price">3€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donut-milka.png" alt="Donut milka" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut milka</h3>
+                    <p class="product-description">Donut nappé de chocolat Milka.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donut-kitkat.png" alt="Donut kitkat" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut kitkat</h3>
+                    <p class="product-description">Donut au KitKat croustillant.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donut-oreo.png" alt="Donut oreo" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut oreo</h3>
+                    <p class="product-description">Donut nappé d'Oreo.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donut-sucre.png" alt="Donut sucre" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut sucre</h3>
+                    <p class="product-description">Donut classique au sucre.</p>
+                    <div class="product-price">2€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donut-pistache.png" alt="Donut pistache" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut pistache</h3>
+                    <p class="product-description">Donut à la pistache.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donuts-yusu.png" alt="Donut yuzu" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut yuzu</h3>
+                    <p class="product-description">Donut au yuzu acidulé.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/donuts/donuts-marshmallow.png" alt="Donut marshmallow" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Donut marshmallow</h3>
+                    <p class="product-description">Donut aux guimauves fondantes.</p>
+                    <div class="product-price">2.20€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/cookie-pistache.png" alt="Cookie pistache" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Cookie pistache</h3>
+                    <p class="product-description">Cookie moelleux à la pistache.</p>
+                    <div class="product-price">2€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/cookie-macadamia.png" alt="Cookie macadamia" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Cookie macadamia</h3>
+                    <p class="product-description">Cookie aux noix de macadamia.</p>
+                    <div class="product-price">2€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/muffin-chocolat.png" alt="Muffin chocolat" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Muffin chocolat</h3>
+                    <p class="product-description">Muffin moelleux au chocolat.</p>
+                    <div class="product-price">2.50€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/muffin-myrtille.png" alt="Muffin myrtille" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Muffin myrtille</h3>
+                    <p class="product-description">Muffin aux myrtilles.</p>
+                    <div class="product-price">2.50€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/tartelette.png" alt="Tartelette" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Tartelette</h3>
+                    <p class="product-description">Petite tartelette gourmande.</p>
+                    <div class="product-price">3.50€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/tartelette-citron.png" alt="Tartelette citron" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Tartelette citron</h3>
+                    <p class="product-description">Petite tartelette au citron.</p>
+                    <div class="product-price">3.50€</div>
+                </div>
+            </div>
+            <div class="product-card donuts">
+                <div class="product-image">
+                    <img src="frontend/images/gourmandises/tiramisu.png" alt="Tiramisu" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Tiramisu</h3>
+                    <p class="product-description">Tiramisu crémeux maison.</p>
+                    <div class="product-price">2.50€</div>
+                </div>
+            </div>
+
+            <!-- Sandwichs & Paninis -->
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Thon mayo</h3>
+                    <p class="product-description">Sandwich au thon et mayonnaise.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Thon piquant</h3>
+                    <p class="product-description">Sandwich au thon épicé.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Saumon</h3>
+                    <p class="product-description">Sandwich au saumon.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Crabe</h3>
+                    <p class="product-description">Sandwich au crabe.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Scampi à l'ail</h3>
+                    <p class="product-description">Sandwich aux scampis à l'ail.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Jambon</h3>
+                    <p class="product-description">Sandwich jambon beurre.</p>
+                    <div class="product-price">3.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Sucuk</h3>
+                    <p class="product-description">Sandwich au sucuk épicé.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Kefta</h3>
+                    <p class="product-description">Sandwich à la kefta maison.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Poulet curry</h3>
+                    <p class="product-description">Sandwich au poulet curry.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Poulet mariné</h3>
+                    <p class="product-description">Sandwich au poulet mariné.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Poulet grillé</h3>
+                    <p class="product-description">Sandwich au poulet grillé.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Filet américain</h3>
+                    <p class="product-description">Sandwich au filet américain.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Boeuf mariné</h3>
+                    <p class="product-description">Sandwich au boeuf mariné.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/sandwichs/sandwich.png" alt="Sandwich" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Sandwich Tenders</h3>
+                    <p class="product-description">Sandwich tenders croustillants.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+
+            <!-- Paninis (exemple, à adapter pour tous les paninis) -->
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Thon mayo</h3>
+                    <p class="product-description">Panini au thon et mayonnaise.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Thon piquant</h3>
+                    <p class="product-description">Panini au thon épicé.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Saumon</h3>
+                    <p class="product-description">Panini au saumon.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Crabe</h3>
+                    <p class="product-description">Panini au crabe.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Scampi à l'ail</h3>
+                    <p class="product-description">Panini aux scampis à l'ail.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Jambon</h3>
+                    <p class="product-description">Panini jambon beurre classique.</p>
+                    <div class="product-price">4€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Sucuk</h3>
+                    <p class="product-description">Panini au sucuk épicé.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Kefta</h3>
+                    <p class="product-description">Panini à la kefta maison.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Poulet curry</h3>
+                    <p class="product-description">Panini au poulet curry.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Poulet mariné</h3>
+                    <p class="product-description">Panini au poulet mariné.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Poulet rôti</h3>
+                    <p class="product-description">Panini au poulet rôti.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Poulet grillé</h3>
+                    <p class="product-description">Panini au poulet grillé.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Filet américain</h3>
+                    <p class="product-description">Panini au filet américain.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Boeuf mariné</h3>
+                    <p class="product-description">Panini au boeuf mariné.</p>
+                    <div class="product-price">4.50€</div>
+                </div>
+            </div>
+            <div class="product-card sandwichs">
+                <div class="product-image">
+                    <img src="frontend/images/paninis/panini.png" alt="Panini" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Panini Tenders</h3>
+                    <p class="product-description">Panini tenders croustillants.</p>
+                    <div class="product-price">5.50€</div>
+                </div>
+            </div>
+
+            <!-- Hamburger & Frites -->
+            <div class="product-card hamburgers">
+                <div class="product-image">
+                    <img src="frontend/images/hamburgers/crispy.png" alt="Hamburger crispy" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Hamburger crispy</h3>
+                    <p class="product-description">Hamburger crispy maison.</p>
+                    <div class="product-price">5€</div>
+                </div>
+            </div>
+            <div class="product-card hamburgers">
+                <div class="product-image">
+                    <img src="frontend/images/hamburgers/crispy-double.png" alt="Hamburger crispy double" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Hamburger crispy double</h3>
+                    <p class="product-description">Hamburger crispy double maison.</p>
+                    <div class="product-price">6.50€</div>
+                </div>
+            </div>
+            <div class="product-card hamburgers">
+                <div class="product-image">
+                    <img src="frontend/images/frites/frite.png" alt="Frites" />
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Frites</h3>
+                    <p class="product-description">Portion de frites croustillantes.</p>
+                    <div class="product-price">1€</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="apropos">
+        <br><br>
+        <h2 class="section-title">Notre Histoire</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Votre boulangerie Cres'pain</h3>
+                <p>
+                    Cres'pain, votre boulangerie, vous offre le délice de la gourmandise tous les jours. Venez explorer
+                    notre vaste sélection de pains dorés, viennoiseries moelleuses, pâtisseries raffinées et en-cas fait
+                    maison, tous préparés avec passion par notre équipe dévouée.
+                </p>
+                <p>
+                    Nous vous offrons chaque jour des créations prêtes à être savourées, idéales pour vos
+                    petits-déjeuners, vos pauses sucrées ou vos collations salées. Craquez pour l'excellence de nos
+                    produits et bénéficiez de nos promotions fréquentes pour davantage de plaisirs gourmands.
+                </p>
+                <a href="#contact" class="cta-button">Nous contacter</a>
+            </div>
+            <div class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+
+            <!-- Contact -->
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p class="info-item">
+                    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <!-- Icône téléphone au style “filled” -->
+                        <path
+                            d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 003.56.57 1 1 0 011 1v3.61a1 1 0 01-1 1A17.92 17.92 0 013 5a1 1 0 011-1h3.61a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.27 1.11l-2.2 2.12z" />
+                    </svg>
+                    <a href="tel:+33759547639" class="phone-number">07 59 54 76 39</a>
+                </p>
+            </div>
+
+
+            <!-- Adresse -->
+            <div class="footer-section">
+                <h4>Adresse</h4>
+                <p class="info-item">
+                    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 112.5-2.5A2.5 2.5 0 0112 11.5z" />
+                    </svg>
+                    <a href="https://www.google.com/maps?q=282+rue+des+d%C3%A9port%C3%A9s,+Crespin" target="_blank"
+                        rel="noopener">
+                        282 rue des déportés, Crespin
+                    </a>
+                </p>
+            </div>
+
+            <!-- Horaires -->
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p class="info-item">
+                    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 16H5V8h14z" />
+                    </svg>
+                    Lundi - Dimanche : 06h00 - 20h00
+                </p>
+            </div>
+
+            <!-- Suivez-nous -->
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <p class="info-item">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+                        style="display: flex; align-items: center; gap: 0.75rem;">
+                        <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.83c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.85h2.74l-.44 2.89h-2.3V22C18.34 21.13 22 17 22 12z" />
+                        </svg>
+                        Facebook
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cres'pain. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Place le script ICI, juste avant la fermeture du body -->
+    <script src="frontend/js/script.js"></script>
+</body>
+
+</html>
